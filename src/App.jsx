@@ -1,16 +1,13 @@
 import { useState, useEffect, useRef } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-
+import resume from "/ORTEGA_RESUME.pdf";
 export default function App() {
   // TABS STATE
   const [activeTab, setActiveTab] = useState("projects");
@@ -83,7 +80,7 @@ export default function App() {
             />
             <div className="ml-4 mt-2 flex flex-col items-left justify-left">
               <h2 className="text-lg font-semibold -mb-1">Jairo Ortega</h2>
-              <span className="text-xs font-light text-gray-500">
+              <span className="text-xs font-light text-gray-600">
                 Web Developer
               </span>
             </div>
@@ -214,8 +211,10 @@ export default function App() {
           </div>
         </div>
         <div className="flex justify-center items-center mt-auto">
-          <button className=" bg-gray-200 text-sm font-medium text-gray-600 hover:text-white hover:bg-blue-400  transition duration-300 ease-in-out  w-full py-1 rounded-md">
-            <span> DOWNLOAD CV </span>
+          <button className="bg-gray-200 text-sm font-medium text-gray-600 hover:text-white hover:bg-blue-400  transition duration-300 ease-in-out  w-full py-1 rounded-md">
+            <a href={resume} download={resume}>
+              DOWNLOAD CV
+            </a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-4 h-4 inline-block mb-0.5 transition-colors duration-300 ease-in-out"
