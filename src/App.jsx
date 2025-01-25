@@ -212,7 +212,7 @@ export default function App() {
         </div>
         <div className="flex justify-center items-center mt-auto">
           <button className="bg-gray-200 text-sm font-medium text-gray-600 hover:text-white hover:bg-blue-400  transition duration-300 ease-in-out  w-full py-1 rounded-md">
-            <a href={resume} download={resume}>
+            <a href={resume} download="Resume_JairoOrtega.pdf">
               DOWNLOAD CV
             </a>
             <svg
