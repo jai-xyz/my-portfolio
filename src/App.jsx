@@ -76,9 +76,9 @@ export default function App() {
         <div>
           <div className="flex justify-left items-center">
             <img
-              src="/vite.svg"
+              src="./1x1.jpg"
               width={60}
-              className="rounded-full"
+              className="border border-gray-500 rounded-full"
               alt="profile"
             />
             <div className="ml-4 mt-2 flex flex-col items-left justify-left">
@@ -115,7 +115,7 @@ export default function App() {
                 className="ms-2 rounded-md img-grayscale bg-gray-200 px-2 py-1 inline-flex items-center"
               >
                 <img
-                  src="/github.png"
+                  src="./github.png"
                   alt="github"
                   width={14}
                   className="mr-1"
@@ -123,13 +123,13 @@ export default function App() {
                 GitHub
               </a>
               <a
-                href=""
+                href="https://www.linkedin.com/in/jairo-lexter-ortega-822324348/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ms-2 rounded-md img-grayscale bg-gray-200 px-2 py-1 inline-flex items-center"
               >
                 <img
-                  src="/linkedin.png"
+                  src="./linkedin.png"
                   alt="linkedin"
                   width={14}
                   className="mr-1"
@@ -145,68 +145,68 @@ export default function App() {
             <div className="grid grid-cols-3 mt-1 gap-2 pe-2">
               <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
-                  <img src="/html.png" width={24} alt="html" />
+                  <img src="./html.png" width={24} alt="html" />
                 </div>
                 <span className="text-[10px] mt-1">HTML</span>
               </div>
 
               <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
-                  <img src="/css.png" width={24} alt="css" />
+                  <img src="./css.png" width={24} alt="css" />
                 </div>
                 <span className="text-[10px] mt-1">CSS</span>
               </div>
 
               <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
-                  <img src="/js.png" width={24} alt="js" />
+                  <img src="./js.png" width={24} alt="js" />
                 </div>
                 <span className="text-[10px] mt-1">JavaScript</span>
               </div>
 
               <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
-                  <img src="/vue.png" width={24} alt="vue" />
+                  <img src="./vue.png" width={24} alt="vue" />
                 </div>
                 <span className="text-[10px] mt-1">Vue</span>
               </div>
 
               <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
-                  <img src="/react.png" width={24} alt="react" />
+                  <img src="./react.png" width={24} alt="react" />
                 </div>
                 <span className="text-[10px] mt-1">React</span>
               </div>
 
               <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
-                  <img src="/nodejs.png" width={24} alt="nodejs" />
+                  <img src="./nodejs.png" width={24} alt="nodejs" />
                 </div>
                 <span className="text-[10px] mt-1">NodeJS</span>
               </div>
 
               <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-3 pb-1 ">
                 <div>
-                  <img src="/php.png" width={30} alt="php" />
+                  <img src="./php.png" width={30} alt="php" />
                 </div>
                 <span className="text-[10px] mt-2">PHP</span>
               </div>
 
               <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
-                  <img src="/laravel.png" width={24} alt="laravel" />
+                  <img src="./laravel.png" width={24} alt="laravel" />
                 </div>
                 <span className="text-[10px] mt-1">Laravel</span>
               </div>
               <div className="img-grayscale  border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
-                  <img src="/mysql.png" width={24} alt="mysql" />
+                  <img src="./mysql.png" width={24} alt="mysql" />
                 </div>
                 <span className="text-[10px] mt-1">MySQL</span>
               </div>
               <div className="img-grayscale  border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
-                  <img src="/git.png" width={24} alt="git" />
+                  <img src="./git.png" width={24} alt="git" />
                 </div>
                 <span className="text-[10px] mt-1">Git</span>
               </div>
@@ -322,15 +322,13 @@ function ShowProjects({ name, type, technologies, description }) {
         <div className="mx-4 bg-gray-100 rounded-md p-2 text-sm">
           <h3 className="text-sm font-bold uppercase">
             {name}
-            <span className="ms-1 text-xs font-medium text-gray-500">
-              {type}
-            </span>
+            <span className="ms-1 text-xs font-bold text-gray-600">{type}</span>
           </h3>
           <div className="text-xs">
             Technologies:
             <span className="font-medium"> {technologies}</span>
           </div>
-          <div className="mt-4 text-xs text-gray-500">{description}</div>
+          <div className="mt-4 text-xs text-gray-600">{description}</div>
         </div>
       </div>
     </div>
@@ -351,7 +349,7 @@ function ShowEducation() {
             Cavite State University - Silang Campus
           </div>
           <div className="text-xs ">2021 - PRESENT</div>
-          <div className="mt-2 text-xs text-gray-500">
+          <div className="mt-2 text-xs text-gray-600">
             Relevant Coursework: Computer Programming, Data Structures and
             Algorithms. Advanced Database System (MySQL), System Analysis and
             Design, Web System and Technologies (PHP), Integrated Programming
@@ -373,19 +371,19 @@ function ShowEducation() {
           className="mySwiper2"
         >
           <SwiperSlide>
-            <img src="/certs/cert1.png" />
+            <img src="./certs/cert1.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/certs/cert2.png" />
+            <img src="./certs/cert2.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/certs/cert3.png" />
+            <img src="./certs/cert3.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/certs/cert4.png" />
+            <img src="./certs/cert4.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/certs/cert5.png" />
+            <img src="./certs/cert5.png" />
           </SwiperSlide>
         </Swiper>
         <Swiper
@@ -398,19 +396,19 @@ function ShowEducation() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="/certs/cert1.png" />
+            <img src="./certs/cert1.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/certs/cert2.png" />
+            <img src="./certs/cert2.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/certs/cert3.png" />
+            <img src="./certs/cert3.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/certs/cert4.png" />
+            <img src="./certs/cert4.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/certs/cert5.png" />
+            <img src="./certs/cert5.png" />
           </SwiperSlide>
         </Swiper>
       </div>
