@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@config '../tailwind.config.js';
-
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -18,4 +16,13 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
+
+@theme {
+  --breakpoint-xl: 1280px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 640px;
+  --breakpoint-xs: 475px;
+  --breakpoint-xxs: 320px;
 }
