@@ -25,6 +25,7 @@ export default function App() {
         "PHP/Laravel, JavaScript/Vue 3, TailwindCSS, MySQL (via PHPMyAdmin)",
       description:
         "Developed an online booking system to simplify and improve the reservation process for a photobooth business. Added PayMongo as a payment gateway to support multiple payment options like GCash, Maya, and bank transfers.",
+      link: "https://aeonsphotobooth.jebsdev.solutions/",
     },
     {
       id: 2,
@@ -33,6 +34,7 @@ export default function App() {
       technologies: "HTML, CSS, JavaScript",
       description:
         "Developed an interactive and visually appealing café menu website using front-end technologies, designed to showcase the menu, highlight key café details, and enhance user engagement and navigation.",
+      link: "https://jai-xyz.github.io/menu4you/",
     },
     {
       id: 3,
@@ -310,6 +312,7 @@ export default function App() {
                 type={project.type}
                 technologies={project.technologies}
                 description={project.description}
+                link={project.link ? project.link : "none"}
               />
             ))
           ) : (
@@ -321,14 +324,30 @@ export default function App() {
   );
 }
 
-function ShowProjects({ name, type, technologies, description }) {
+function ShowProjects({ name, type, technologies, description, link }) {
   return (
     <div>
       <div className="grid grid-cols-1 gap-4 mt-4">
         <div className="mx-4 bg-gray-100 rounded-md p-2 text-sm">
-          <h3 className="text-sm font-bold uppercase">
-            {name}
-            <span className="ms-1 text-xs font-bold text-gray-600">{type}</span>
+          <h3 className="text-sm font-bold uppercase flex justify-between items-center">
+            <span>
+              {name}
+              <span className="ms-1 text-xs font-bold text-gray-600">
+                {type}
+              </span>
+            </span>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className={`w-5 h-5  ${
+                  link === "none" ? "hidden" : "text-blue-500"
+                }`}
+                viewBox="0 0 512 512"
+                fill="currentColor"
+              >
+                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+              </svg>
+            </a>
           </h3>
           <div className="text-xs">
             Technologies:
