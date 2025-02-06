@@ -53,22 +53,22 @@ export default function App() {
   ];
 
   const [projects, setProjects] = useState(defaultProjects);
-  const contentRef = useRef(null);
-  const [isScrollable, setIsScrollable] = useState(false);
+  // const contentRef = useRef(null);
+  // const [isScrollable, setIsScrollable] = useState(false);
 
-  useEffect(() => {
-    if (contentRef.current) {
-      setIsScrollable(
-        contentRef.current.scrollHeight > contentRef.current.clientHeight
-      );
-    }
-  }, [activeTab, projects]);
+  // useEffect(() => {
+  //   if (contentRef.current) {
+  //     setIsScrollable(
+  //       contentRef.current.scrollHeight > contentRef.current.clientHeight
+  //     );
+  //   }
+  // }, [activeTab, projects]);
 
   return (
     // main body
-    <div className="max-w-5xl mx-auto h-full rounded-lg shadow bg-white mt-8 flex">
+    <div className="min-2xl:max-w-5xl min-xl:max-w-5xl min-lg:max-w-4xl min-md:max-w-2xl mx-4 min-xl:mx-auto h-full rounded-lg shadow bg-white min-lg:mt-8 min-xxs:mt-4  flex min-lg:flex-row min-lg:mx-auto min-md:mx-auto min-xxs:flex-col">
       {/* left side */}
-      <div className="w-2/5 px-4 py-4 flex flex-col justify-between">
+      <div className="min-lg:w-2/5 px-4 py-4 flex flex-col justify-between min-md:w-full">
         {/* image and name */}
         <div>
           <div className="flex justify-left items-center">
@@ -139,69 +139,69 @@ export default function App() {
           {/* technical skills with logo */}
           <div className="mt-2">
             <h3 className="text-sm font-bold">Technical skills</h3>
-            <div className="grid grid-cols-3 mt-1 gap-2 pe-2">
-              <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
+            <div className="grid min-lg:grid-cols-3 mt-1 gap-2 pe-2 min-xs:grid-cols-5 min-xxs:grid-cols-3">
+              <div className="img-grayscale border border-gray-300 hover:border-gray-500 rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
                   <img src="./html.png" width={24} alt="html" />
                 </div>
                 <span className="text-[10px] mt-1">HTML</span>
               </div>
 
-              <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
+              <div className="img-grayscale border border-gray-300 hover:border-gray-500  rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
                   <img src="./css.png" width={24} alt="css" />
                 </div>
                 <span className="text-[10px] mt-1">CSS</span>
               </div>
 
-              <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
+              <div className="img-grayscale border border-gray-300 hover:border-gray-500  rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
                   <img src="./js.png" width={24} alt="js" />
                 </div>
                 <span className="text-[10px] mt-1">JavaScript</span>
               </div>
 
-              <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
+              <div className="img-grayscale border border-gray-300 hover:border-gray-500  rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
                   <img src="./vue.png" width={24} alt="vue" />
                 </div>
                 <span className="text-[10px] mt-1">Vue</span>
               </div>
 
-              <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
+              <div className="img-grayscale border border-gray-300 hover:border-gray-500  rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
                   <img src="./react.png" width={24} alt="react" />
                 </div>
                 <span className="text-[10px] mt-1">React</span>
               </div>
 
-              <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
+              <div className="img-grayscale border border-gray-300 hover:border-gray-500  rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
                   <img src="./nodejs.png" width={24} alt="nodejs" />
                 </div>
                 <span className="text-[10px] mt-1">NodeJS</span>
               </div>
 
-              <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-3 pb-1 ">
+              <div className="img-grayscale border border-gray-300 hover:border-gray-500   rounded-md flex flex-col items-center justify-center px-6 pt-3 pb-1 ">
                 <div>
                   <img src="./php.png" width={30} alt="php" />
                 </div>
                 <span className="text-[10px] mt-2">PHP</span>
               </div>
 
-              <div className="img-grayscale border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
+              <div className="img-grayscale border border-gray-300 hover:border-gray-500  rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
                   <img src="./laravel.png" width={24} alt="laravel" />
                 </div>
                 <span className="text-[10px] mt-1">Laravel</span>
               </div>
-              <div className="img-grayscale  border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
+              <div className="img-grayscale border border-gray-300 hover:border-gray-500  rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
                   <img src="./mysql.png" width={24} alt="mysql" />
                 </div>
                 <span className="text-[10px] mt-1">MySQL</span>
               </div>
-              <div className="img-grayscale  border rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
+              <div className="img-grayscale  border border-gray-300 hover:border-gray-500  rounded-md flex flex-col items-center justify-center px-6 pt-2 pb-1 ">
                 <div>
                   <img src="./git.png" width={24} alt="git" />
                 </div>
@@ -210,7 +210,7 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center mt-auto">
+        <div className="flex justify-center items-center min-lg:mt-auto min-xxs:mt-4">
           <button className="bg-gray-200 text-sm font-medium text-gray-600 hover:text-white hover:bg-blue-400  transition duration-300 ease-in-out  w-full py-1 rounded-md">
             <a href={resume} download="Resume_JairoOrtega.pdf">
               DOWNLOAD CV
@@ -227,15 +227,15 @@ export default function App() {
         </div>
       </div>
       {/* right side */}
-      <div className="w-3/4 py-4 border-l border-gray-200  ">
+      <div className="min-lg:w-3/4 py-4 min-lg:border-l min-lg:border-t-0 min-xxs:border-t border-gray-200">
         <div className="px-4 text-xs font-light text-gray-600">
           Explore my projects and educational background, including
           certifications that showcase my skills and commitment to growth.
         </div>
-        <div className="flex mx-auto items-center w-full border-b border-gray-200 mt-2">
+        <div className="flex mx-auto items-center min-sm:flex-row min-xxs:flex-col  w-full border-b border-gray-200 mt-2">
           <div
             onClick={() => handleTabChange("projects")}
-            className={`w-1/2 px-4 py-4 cursor-pointer text-center bg-white hover:bg-gray-100 relative`}
+            className={`min-sm:w-1/2 min-xxs:w-full px-4 py-4 cursor-pointer text-center bg-white hover:bg-gray-100 relative`}
           >
             <button className="font-bold relative">
               <svg
@@ -260,7 +260,7 @@ export default function App() {
           </div>
           <div
             onClick={() => handleTabChange("education")}
-            className={`w-1/2 px-4 py-4 cursor-pointer text-center bg-white hover:bg-gray-100 relative`}
+            className={`min-sm:w-1/2 min-xxs:w-full px-4 py-4 cursor-pointer text-center bg-white hover:bg-gray-100 relative`}
           >
             <button className="font-bold relative">
               <svg
@@ -285,15 +285,22 @@ export default function App() {
           </div>
         </div>
         <div
-          ref={contentRef}
-          className={`${
-            isScrollable
-              ? "overflow-y-scroll"
-              : activeTab === "education"
-              ? "overflow-y-scroll"
-              : ""
-          }`}
-          style={{ height: activeTab === "education" ? "550px" : "auto" }}
+        // ref={contentRef}
+        // className={`${
+        //   isScrollable
+        //     ? "overflow-y-scroll"
+        //     : activeTab === "education"
+        //     ? "overflow-y-scroll"
+        //     : ""
+        // }`}
+        // style={{
+        //   height:
+        //     activeTab === "education" && window.innerHeight > 768
+        //       ? "auto"
+        //       : activeTab === "education" && window.innerHeight < 768
+        //       ? "550px"
+        //       : "550px",
+        // }}
         >
           {activeTab === "projects" ? (
             projects.map((project) => (
