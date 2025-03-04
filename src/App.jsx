@@ -410,6 +410,12 @@ function ShowEducation() {
           <SwiperSlide>
             <img src="./certs/cert5.png" />
           </SwiperSlide>
+          <SwiperSlide>
+            <img src="./certs/cert6.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./certs/cert7.png" />
+          </SwiperSlide>
         </Swiper>
         <Swiper
           onSwiper={setThumbsSwiper}
@@ -434,6 +440,12 @@ function ShowEducation() {
           </SwiperSlide>
           <SwiperSlide>
             <img src="./certs/cert5.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./certs/cert6.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./certs/cert7.png" />
           </SwiperSlide>
         </Swiper>
       </div>
